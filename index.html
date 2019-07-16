@@ -1,0 +1,567 @@
+---
+layout: workshop      # DON'T CHANGE THIS.
+root: .               # DON'T CHANGE THIS EITHER.  (THANK YOU.)
+carpentry: "swc"    # what kind of Carpentry (must be either "lc" or "dc" or "swc")
+venue: "University of Chicago"        # brief name of host site without address (e.g., "Euphoric State University")
+address: "CLSC, 119 E 57th St, Chicago, IL 60637"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
+country: "us"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
+language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
+latlng: "41.791836,-87.602679"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use http://www.latlong.net/)
+humandate: "January 12-13, 2019"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humantime: "8:00 am - 4:30 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
+startdate: 2019-01-20      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: 2019-01-21        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+instructor: ["Nick Knoblauch", "Arjun Biddanda", "Briana Mittleman", "Angela Li"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Peter Carbonetto", "Maryn Carlson", "Ankeeta Shah", "Zach Miller", "Rahul Subramanian"  ]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+contact: ["nwknoblauch@uchicago.edu", "abiddanda@uchicago.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
+collaborative_notes:             # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
+eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
+---
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap-theme.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="/stylesheetsassets/lesson.css" /> -->
+
+
+
+    <title>2019-01-12-chicago</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Software Carpentry</h1>
+        <h2>An intermediate programming workshop for UChicago BSD researchers</h2>
+        <h2>Saturday-Sunday, January 12-13, 2019</h2>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+
+<ul>
+  <li><a href="#registration">Registration</a></li>
+  <li><a href="#links">Useful links</a></li>
+  <li><a href="#general">General Information</a></li>
+  <li><a href="#schedule">Schedule</a></li>
+  <li><a href="#syllabus">Syllabus</a></li>
+  <li><a href="#setup">Setup</a></li>
+  <li><a href="#acknowledgments">Acknowledgments</a></li>
+</ul>
+<h2 id ="registration">Registration</h2>
+
+<p>
+  Registration is required and is limited to those affiliated with the
+  Biological Sciences Division. <br>
+	Please register at <a href="https://2019-01-12-chicago.eventbrite.com">2019-01-12-chicago.eventbrite.com</a>
+</p>
+
+<hr/>
+
+<h2 id ="links">Useful links</h2>
+
+<ul>
+  <!-- <li>Please complete <b>both</b> of the pre-workshop surveys. Your responses -->
+  <!--   are critical for us to improve our teaching and to request funding for future -->
+  <!--   workshops. -->
+  <!--   <ul> -->
+  <!--     <li> -->
+  <!-- 	<a href="https://goo.gl/forms/EZYgOH6zZ76x1YW83", target="_blank">UChicago post-workshop survey</a> -->
+  <!--     </li> -->
+  <!--     <li> -->
+  <!-- 	<a href="https://www.surveymonkey.com/r/swc_post_workshop_v1?workshop_id=2019-01-12-chicago", target="_blank">Software Carpentry post-workshop survey</a> -->
+  <!--     </li> -->
+  <!--   </ul> -->
+  <!-- </li>  -->
+  <!-- <li>The UChicago pre-workshop survey is closed.</li> -->
+  <!-- <li>The Software Carpentry pre-workshop survey is closed.</li> -->
+ <!--TODO : need to update these survey links-->
+ <!--<li>Please complete-->
+  <!--the <a href="https://goo.gl/forms/x1MDvB0B9jp1w3et1", target="_blank"> pre-workshop survey</a>.</li>-->
+	<li>The UChicago pre-workshop survey is closed.</li> 
+	<li> Please complete the <a href="https://goo.gl/forms/NjAXl5MXEiss20Hd2", target="_blank"> post-workshop survey</a> </li>	
+	
+	<!--<li> Please complete the <a href="https://www.surveymonkey.com/r/swc_pre_workshop_v1?workshop_id=2019-01-12-chicago", target="_blank">Software Carpentry pre-workshop survey</a></li>-->
+	
+<!-- <li>R script <a href="session-01.R">session-01.R</a> from first session.</li> -->
+  <!-- <li>R script <a href="session-02.R">session-02.R</a> from second session.</li> -->
+  <!-- <li>R script <a href="session-03.R">session-03.R</a> from second session.</li> -->
+  <!-- <li>R script <a href="session-04.R">session-04.R</a> from second session.</li> -->
+  <!-- <li>Download this <a href="http://swcarpentry.github.io/r-novice-inflammation/files/r-novice-inflammation-data.zip">zip file</a> and save it in the folder "workshop" on your Desktop.</li> -->
+  <!--<li><a href="https://education.github.com/pack", target="_blank"> Click here to sign up for the Github Student Developer Pack</a></li>-->
+  <!-- <li>Click <a href="exercises.html">here</a> for the exercises.</li> -->
+  <!--<li><a href="https://github.com/CreRecombinase/intro-r-project-2019", target="_blank"> Github repo for the workshop</a></li>-->
+</ul>
+
+
+<h2 id="general">General Information</h2>
+
+<p>
+<!--  This interactive workshop will cover the basics of R, the Unix shell,-->
+  <!--and version control.-->
+  <!--<a href="http://www.r-project.org">R</a> is a computing environment-->
+  <!--that is especially powerful for data exploration, visualization, and-->
+ <!--statistical analysis.-->
+	This interactive workshop is for learners that are comfortable programming in R and want to learn some of R's powerful tools for analyzing and visualizing data. We will begin with a brief overview of R and the Unix Shell, and cover topics such as developing reproduceable reports in R Markdown, defensive programming, and data visualization in ggplot2.	
+</p>
+
+<p>
+  <u>Coffee and lunch will be provided.</u>
+</p>
+
+<p>
+  <strong>When:</strong> 8:00 am - 4:30 pm, Saturday-Sunday (January 12-13), 2019
+</p>
+
+<p>
+  <strong>Who:</strong> The course is limited to graduate students and
+  other researchers in the Biological Sciences Division at the
+  University of Chicago.
+</p>
+
+<p>
+  <strong>Prerequisites:</strong>  
+		Attendees are expected to have some previous programming experience.
+</p>
+
+
+<p>
+  <strong>Where:</strong>
+  CLSC 119, 924 E 57th St, Chicago, IL 60637.
+  Get directions with
+  <a href="//www.openstreetmap.org/?mlat=41.791836&mlon=-87.602679}}&zoom=16">OpenStreetMap</a>
+  or
+  <a href="//maps.google.com/maps?q=41.791836, -87.602679">Google Maps</a>.
+</p>
+
+
+<p id="requirements">
+  <strong>Requirements:</strong> Participants must bring a laptop with
+  a Mac, Linux, or Windows operating sytem (not a tablet, Chromebook,
+  etc.) that they have administrative privileges on. They should have
+  a few specific software packages installed (listed
+  <a href="#setup">below</a>).
+</p>
+
+<p>
+  <strong>Instructors:</strong>
+  Arjun Biddanda, Nicholas Knoblauch, Briana Mittleman, Angela Li
+</p>
+
+<p>
+<!--  <strong>Helpers:</strong>
+  Peter Carbonetto, Gao Wang, John Blischak, Sahar Mozaffari, Briana Mittleman, Yeonwoo Park, Maryn Carlson
+</p>
+-->
+<p>
+  <strong>Faculty advisor:</strong>
+  Allan Drummond
+</p>
+
+<p>
+  <strong>Administrator:</strong>
+ Sue Levison
+</p>
+
+<p>
+  <strong>Funding:</strong> This workshop was made possible through
+  the generous sponsorship of
+	the <a href="http://gradprograms.bsd.uchicago.edu/our_office.html">Office
+	of Graduate and Postdoctoral Affairs</a>,
+  the <a href="http://genes.uchicago.edu/">Department of Human
+  Genetics</a>, and
+  the <a href="http://bmb.uchospitals.edu/">Department of Biochemistry
+  and Molecular Biology</a>.
+</p>
+
+<p>
+  <strong>Contact</strong>:
+  Please mail
+
+  <a href='mailto:abiddanda@uchicago.edu'>abiddanda@uchicago.edu</a> or
+      <a href='mailto:nwknoblauch@uchicago.edu'>nwknoblauch@uchicago.edu</a>
+  for more information.
+</p>
+
+<hr/>
+
+
+<!--TODO : this schedule will need to change to more accurately reflect what we are teaching -->
+<h2 id="schedule">Schedule</h2>
+
+<h3>January 12</h3>
+    <table class="table table-striped">
+      <tr><td class="alignleft">08:00 am - 08:30 am - <a href="#setup">Installation help</a></td></tr>
+      <tr><td class="alignleft">08:30 am - 10:00 am - <a href="https://crerecombinase.github.io/r-intermediate-altmetrics/index.html#topics"> Review of Unix shell and R</a> </td></tr>
+      <tr><td class="alignleft">10:00 am - 10:30 am - Coffee break</td></tr>
+      <tr><td class="alignleft">10:30 am - 12:00 pm - <a href="https://crerecombinase.github.io/r-intermediate-altmetrics/index.html#topics">Writing reproducible reports</a></td></tr>
+      <tr><td class="alignleft" >12:00 pm - 01:00 pm - Lunch</td></tr>
+      <tr><td class="alignleft">01:00 pm - 02:30 pm -  <a href="https://crerecombinase.github.io/r-intermediate-altmetrics/index.html#topics">Debugging</a></td></tr>
+      <tr><td class="alignleft">02:30 pm - 03:00 pm - Coffee break</td></tr>
+      <tr><td class="alignleft">03:00 pm - 04:30 pm -  <a href="https://crerecombinase.github.io/r-intermediate-altmetrics/index.html#topics">Defensive programming</a></td></tr>
+    </table>
+
+    <h3>January 13</h3>
+    <table class="table table-striped">
+			<tr><td class="alignleft" >08:00 am - 08:30 am - <a href="#setup">Installation help</a></td></tr>
+			<tr><td class="alignleft">08:30 pm - 10:00 pm - <a href="https://crerecombinase.github.io/r-intermediate-altmetrics/index.html#topics"> Analyzing data with dplyr</a></td></tr>
+      <tr><td class="alignleft">10:00 pm - 10:30 pm - Coffee break</td></tr>
+      <tr><td class="alignleft">10:30 pm - 12:00 pm - <a href="https://crerecombinase.github.io/r-intermediate-altmetrics/index.html#topics"> Visualizing data with ggplot2</a></td></tr>
+			<tr><td class="alignleft" >12:00 pm - 01:00 pm - Lunch</td></tr>
+			
+      <tr><td class="alignleft">01:00 am - 02:30 pm - <a href="https://crerecombinase.github.io/git-lessons/index.html#topics">Version control with Git</a></td></tr>
+      <tr><td class="alignleft">02:30 pm - 03:00 pm - Coffee break</td></tr>
+      <tr><td class="alignleft">03:00 pm - 04:30 pm - <a href="https://crerecombinase.github.io/git-lessons/index.html#topics">Version control with Git</a></td></tr>
+		</table>
+<hr/>
+<h2 id="syllabus">Syllabus</h2>
+
+<h3>Review of the Unix shell and R programming</h3>
+<p>
+  We will start with a refresher on the Unix shell and R
+  programming. Specifically, we will quickly review how to manage files with the
+  Unix shell and write loops and functions in R. This will ensure that everyone
+  is reminded of the relevant syntax needed for the rest of the workshop.
+</p>
+
+<h3>Writing reproducible reports</h3>
+<p>
+  We will introduce the concept of literate programming, in which code, plots,
+  and text are combined into one document. This makes it easier to organize a
+  research project and share the results. Specifically, we will use
+  knitr/rmarkdown/pandoc to convert R code into html, pdf, and Word documents.
+</p>
+
+<h3>Exploring and visualizing data</h3>
+<p>
+  We will teach how to subset, summarize, and clean a data set using the R
+  package dplyr. Furthermore, we will demonstrate how to visualize multivariate
+  data using the popular graphics package ggplot2.
+</p>
+
+<h3>Tracking code development</h3>
+<p>
+  We will cover how to track code development using the version control software
+  Git. This facilitates both experimenting with new ideas and the ability to
+  reproduce past results with a specific version of the code. Furthermore, we
+  will teach how to share their code online and collaborate using the
+  website GitHub.
+</p>
+
+<h3>Debugging, defensive programming, and automated testing</h3>
+<p>
+  We will cover multiple aspects of ensuring that code is working
+  correctly. This will include how to debug functions, programming defensively
+  by including assertion statements to check code behavior, and writing tests
+  that can be run automatically.
+<p>
+
+<hr/>
+
+<!--
+  SETUP
+
+  Delete irrelevant sections from the setup instructions.  Each
+  section is inside a 'div' without any classes to make the beginning
+  and end easier to find.
+
+  This is the other place where people frequently make mistakes, so
+  please preview your site before committing, and make sure to run
+  'tools/check' as well.
+-->
+
+
+<h2 id="setup">Setup</h2>
+<p>
+  To participate in a Software Carpentry workshop, you will need
+  access to the software described below. In addition, you will
+  need an up-to-date web browser.
+</p>
+<p>
+  We maintain a list of common issues that occur during installation as a reference for instructors
+  that may be useful on the
+  <a href = "https://github.com/swcarpentry/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
+</p>
+
+<div id="shell"> <!-- Start of 'shell' section. -->
+  <h3>The Bash Shell</h3>
+
+  <p>
+    Bash is a commonly-used shell that gives you the power to do simple
+    tasks more quickly.
+  </p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <h4 id="shell-windows"> Windows </h4>
+      <a href="https://www.youtube.com/watch?v=339AEqk9c-8">Video Tutorial</a>
+
+      <ol>
+        <li>Download the Git for Windows <a href="https://git-for-windows.github.io/">installer</a>.</li>
+        <li>Run the installer and follow the steps bellow:
+          <ol style="font-size:1em">
+            <!-- Git 2.8.2 Setup -->
+            <!-- Information -->
+            <li>Click on "Next".</li>
+            <!-- Select Components -->
+            <li>Click on "Next".</li>
+            <!-- Adjusting your PATH environment -->
+            <li>
+              <strong>
+                Keep "Use Git from the Windows Command Prompt" selected and click on "Next".
+              </strong>
+                If you forgot to do this programs that you need for the workshop will not work properly.
+                If this happens rerun the installer and select the appropriate option.
+            </li>
+            <!-- Choosing the SSH executable -->
+            <li>Click on "Next".</li>
+            <!-- Configuring the line ending conversions -->
+            <li>
+              <strong>
+                Keep "Checkout Windows-style, commit Unix-style line endings" selected and click on "Next".
+              </strong>
+            </li>
+            <!-- Configuring the terminal emulator to use with Git Bash -->
+            <li>
+              <strong>
+                Keep "Use Windows' default console window" selected and click on "Next".
+              </strong>
+            </li>
+            <!-- Configuring experimental performance tweaks -->
+            <li>Click on "Install".</li>
+            <!-- Installing -->
+            <!-- Completing the Git Setup Wizard -->
+            <li>Click on "Finish".</li>
+          </ol>
+        </li>
+        <li>
+          If your "HOME" environment variable is not set (or you don't know what this is):
+          <ol>
+            <li> Open command prompt (Open Start Menu then type <code>cmd</code> and press [Enter])</li>
+            <li>
+              Type the following line into the command prompt window exactly as shown:
+              <p><code>setx HOME "%USERPROFILE%"</code></p>
+            </li>
+            <li> Press [Enter], you should see <code>SUCCESS: Specified value was saved. </code></li>
+            <li> Quit command prompt by typing <code>exit</code> then pressing [Enter] </li>
+          </ol>
+        </li>
+      </ol>
+      <p>This will provide you with both Git and Bash in the Git Bash program.</p>
+    </div>
+
+    <div class="col-md-4">
+      <h4 id="shell-macosx">Mac OS X</h4>
+      <p>
+        The default shell in all versions of Mac OS X is Bash, so no
+        need to install anything.  You access Bash from the Terminal
+        (found in
+        <code>/Applications/Utilities</code>).
+        See the Git installation <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">video tutorial</a>
+        for an example on how to open the Terminal.
+        You may want to keep
+        Terminal in your dock for this workshop.
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h4 id="shell-linux">Linux</h4>
+      <p>
+        The default shell is usually Bash, but if your
+        machine is set up differently you can run it by opening a
+        terminal and typing <code>bash</code>.  There is no need to
+        install anything.
+      </p>
+    </div>
+  </div>
+</div> <!-- End of 'shell' section. -->
+<div id="git"> <!-- Start of 'Git' section. GitHub browser compatability
+           is given at https://help.github.com/articles/supported-browsers/-->
+  <h3>Git</h3>
+  <p>
+    Git is a version control system that lets you track who made changes
+    to what when and has options for easily updating a shared or public
+    version of your code
+    on <a href="https://github.com/">github.com</a>. You will need a
+    <a href="https://help.github.com/articles/supported-browsers/">supported</a>
+    web browser (current versions of Chrome, Firefox or Safari,
+    or Internet Explorer version 9 or above).
+  </p>
+  <p>
+    You will need an account at <a href="https://github.com/">github.com</a>
+    for parts of the Git lesson. Basic GitHub accounts are free. We encourage
+    you to create a GitHub account if you don't have one already.
+    Please consider what personal information you'd like to reveal. For
+    example, you may want to review these
+    <a href="https://help.github.com/articles/keeping-your-email-address-private/">instructions
+    for keeping your email address private</a> provided at GitHub.
+  </p>
+  <div class="row">
+    <div class="col-md-4">
+      <h4 id="git-windows">Windows</h4>
+      <p>
+        Git should be installed on your computer as part of your Bash
+        install (described above).
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h4 id="git-macosx">Mac OS X</h4>
+      <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">Video Tutorial</a>
+      <p>
+        <strong>For OS X 10.9 and higher</strong>, install Git for Mac
+        by downloading and running the most recent "mavericks" installer from
+        <a href="http://sourceforge.net/projects/git-osx-installer/files/">this list</a>.
+        After installing Git, there will not be anything in your <code>/Applications</code> folder,
+        as Git is a command line program.
+        <strong>For older versions of OS X (10.5-10.8)</strong> use the
+        most recent available installer labelled "snow-leopard"
+        <a href="http://sourceforge.net/projects/git-osx-installer/files/">available here</a>.
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h4 id="git-linux">Linux</h4>
+      <p>
+        If Git is not already available on your machine you can try to
+        install it via your distro's package manager. For Debian/Ubuntu run
+        <code>sudo apt-get install git</code> and for Fedora run
+        <code>sudo yum install git</code>.
+      </p>
+    </div>
+  </div>
+</div> <!-- End of 'Git' section. -->
+<div id="editor"> <!-- Start of 'editor' section. -->
+  <h3>Text Editor</h3>
+  <p>
+    To create small files in this workshop, you will use the basic
+    text editor nano. It's a much different experience from the text
+    editor you are likely familiar with for creating documents,
+    e.g. Microsoft Word, but it is very convenient for writing short
+    scripts.
+  </p>
+  <p>
+    Warning: The default text editor on Mac OS X and Linux is usually
+    set to Vim, which is not famous for being intuitive. If you
+    accidentally find yourself stuck in it, try typing the escape key,
+    followed by <code>:q!</code> (colon, lower-case 'q', exclamation
+    mark), then hitting Return to return to the shell.
+  </p>
+  <div class="row">
+    <div class="col-md-4">
+      <h4 id="editor-windows">Windows</h4>
+      <a href="https://www.youtube.com/watch?v=339AEqk9c-8">Video Tutorial</a>
+      <p>
+        nano is a basic editor and the default that instructors use in the workshop.
+        To install it,
+        download the <a href="https://github.com/swcarpentry/windows-installer/releases/download/v0.3/SWCarpentryInstaller.exe">Software Carpentry Windows installer</a>
+        and double click on the file to run it.
+        <strong>This installer requires an active internet connection.</strong>
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h4 id="editor-macosx">Mac OS X</h4>
+      <p>
+        nano is a basic editor and the default that instructors use in the workshop.
+        See the Git installation <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">video tutorial</a>
+        for an example on how to open nano.
+        It should be pre-installed.
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h4 id="editor-linux">Linux</h4>
+      <p>
+        nano is a basic editor and the default that instructors use in the workshop.
+        It should be pre-installed.
+      </p>
+    </div>
+  </div>
+</div> <!-- End of 'editor' section. -->
+
+<div id="r"> <!-- Start of 'R' section. -->
+  <h3>R</h3>
+  <p>
+    <a href="http://www.r-project.org">R</a> is a programming language
+    that is especially powerful for data exploration, visualization, and
+    statistical analysis. To interact with R, we use
+    <a href="http://www.rstudio.com/">RStudio</a>.
+  </p>
+  <div class="row">
+    <div class="col-md-4">
+      <h4 id="r-windows">Windows</h4>
+      <a href="https://www.youtube.com/watch?v=q0PjTAylwoU">Video Tutorial</a>
+      <p>
+        Install R by downloading and running
+        <a href="http://cran.r-project.org/bin/windows/base/release.htm">this .exe file</a>
+        from <a href="http://cran.r-project.org/index.html">CRAN</a>.
+        Also, please install the
+        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h4 id="r-macosx">Mac OS X</h4>
+      <a href="https://www.youtube.com/watch?v=5-ly3kyxwEg">Video Tutorial</a>
+      <p>
+        Install R by downloading and running
+        <a href="http://cran.r-project.org/bin/macosx/R-latest.pkg">this .pkg file</a>
+        from <a href="http://cran.r-project.org/index.html">CRAN</a>.
+        Also, please install the
+        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h4 id="r-linux">Linux</h4>
+      <p>
+        You can download the binary files for your distribution
+        from <a href="http://cran.r-project.org/index.html">CRAN</a>. Or
+        you can use your package manager (e.g. for Debian/Ubuntu
+        run <code>sudo apt-get install r-base</code> and for Fedora run
+        <code>sudo yum install R</code>).  Also, please install the
+        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
+      </p>
+    </div>
+  </div>
+</div> <!-- End of 'R' section. -->
+
+
+<div id="r-packages">
+	<h3>R packages</h3>
+	<p>
+		Please install the following R packages using <code>install.packages</code>:
+		<ul>
+			<li> <a href="https://cran.r-project.org/web/packages/tidyverse/index.html">tidyverse</a></li>
+			<li><a href="https://cran.r-project.org/web/packages/testit/index.html">testit</a></li>
+			<li><a href="https://cran.r-project.org/web/packages/rmarkdown/index.html">rmarkdown</a></li>
+		</ul>
+	</p>
+
+</div> 
+
+
+<h2 id="acknowledgments">Acknowledgments</h2>
+<p>
+  This workshop was made possible by the instructor training and
+  lesson development created by the Software Carpentry team and of
+  course our generous sponsors
+  (<a href="http://gradprograms.bsd.uchicago.edu/our_office.html">OGPA</a>,
+  <a href="http://genes.uchicago.edu/">HG</a>,
+  <a href="http://bmb.uchospitals.edu/">BMB</a>).
+</p>
+
+<p>
+  This page was generated by <a href="https://pages.github.com">GitHub
+  Pages</a> using the Architect theme
+  by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+</p>
+
+      </div>
+    </div>
+  </body>
+</html>
