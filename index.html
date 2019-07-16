@@ -7,13 +7,13 @@ address: "CLSC, 119 E 57th St, Chicago, IL 60637"      # full street address of 
 country: "us"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
 latlng: "41.791836,-87.602679"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use http://www.latlong.net/)
-humandate: "January 12-13, 2019"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humandate: "August 22-23, 2019"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 humantime: "8:00 am - 4:30 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
-startdate: 2019-01-20      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: 2019-01-21        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["Nick Knoblauch", "Arjun Biddanda", "Briana Mittleman", "Angela Li"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Peter Carbonetto", "Maryn Carlson", "Ankeeta Shah", "Zach Miller", "Rahul Subramanian"  ]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-contact: ["nwknoblauch@uchicago.edu", "abiddanda@uchicago.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
+startdate: 2019-08-22      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: 2019-08-23        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+instructor: ["Nick Knoblauch", "Arjun Biddanda", "Briana Mittleman"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Zach Miller"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+contact: ["nwknoblauch@uchicago.edu", "abiddanda@uchicago.edu","brmittleman@uchicago.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes:             # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
@@ -33,15 +33,15 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 
 
 
-    <title>2019-01-12-chicago</title>
+    <title>2019-08-12-chicago</title>
   </head>
 
   <body>
     <header>
       <div class="inner">
         <h1>Software Carpentry</h1>
-        <h2>An intermediate programming workshop for UChicago BSD researchers</h2>
-        <h2>Saturday-Sunday, January 12-13, 2019</h2>
+        <h2>An introductory programming workshop for UChicago BSD researchers</h2>
+        <h2>Thursday-Friday, January 22-23, 2019</h2>
       </div>
     </header>
 
@@ -88,12 +88,12 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
  <!--TODO : need to update these survey links-->
  <!--<li>Please complete-->
   <!--the <a href="https://goo.gl/forms/x1MDvB0B9jp1w3et1", target="_blank"> pre-workshop survey</a>.</li>-->
-	<li>The UChicago pre-workshop survey is closed.</li> 
-	<li> Please complete the <a href="https://goo.gl/forms/NjAXl5MXEiss20Hd2", target="_blank"> post-workshop survey</a> </li>	
-	
-	<!--<li> Please complete the <a href="https://www.surveymonkey.com/r/swc_pre_workshop_v1?workshop_id=2019-01-12-chicago", target="_blank">Software Carpentry pre-workshop survey</a></li>-->
-	
-<!-- <li>R script <a href="session-01.R">session-01.R</a> from first session.</li> -->
+  <li>The UChicago pre-workshop survey is closed.</li>
+  <li> Please complete the <a href="https://goo.gl/forms/NjAXl5MXEiss20Hd2", target="_blank"> post-workshop survey</a> </li>
+
+  <!--<li> Please complete the <a href="https://www.surveymonkey.com/r/swc_pre_workshop_v1?workshop_id=2019-01-12-chicago", target="_blank">Software Carpentry pre-workshop survey</a></li>-->
+
+  <!-- <li>R script <a href="session-01.R">session-01.R</a> from first session.</li> -->
   <!-- <li>R script <a href="session-02.R">session-02.R</a> from second session.</li> -->
   <!-- <li>R script <a href="session-03.R">session-03.R</a> from second session.</li> -->
   <!-- <li>R script <a href="session-04.R">session-04.R</a> from second session.</li> -->
@@ -103,16 +103,15 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   <!--<li><a href="https://github.com/CreRecombinase/intro-r-project-2019", target="_blank"> Github repo for the workshop</a></li>-->
 </ul>
 
-
 <h2 id="general">General Information</h2>
 
 <p>
-<!--  This interactive workshop will cover the basics of R, the Unix shell,-->
+  <!--  This interactive workshop will cover the basics of R, the Unix shell,-->
   <!--and version control.-->
   <!--<a href="http://www.r-project.org">R</a> is a computing environment-->
   <!--that is especially powerful for data exploration, visualization, and-->
- <!--statistical analysis.-->
-	This interactive workshop is for learners that are comfortable programming in R and want to learn some of R's powerful tools for analyzing and visualizing data. We will begin with a brief overview of R and the Unix Shell, and cover topics such as developing reproduceable reports in R Markdown, defensive programming, and data visualization in ggplot2.	
+  <!--statistical analysis.-->
+  This interactive workshop is for learners that are comfortable programming in R and want to learn some of R's powerful tools for analyzing and visualizing data. We will begin with a brief overview of R and the Unix Shell, and cover topics such as developing reproduceable reports in R Markdown, defensive programming, and data visualization in ggplot2.
 </p>
 
 <p>
@@ -120,7 +119,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 </p>
 
 <p>
-  <strong>When:</strong> 8:00 am - 4:30 pm, Saturday-Sunday (January 12-13), 2019
+  <strong>When:</strong> 8:00 am - 4:30 pm, Saturday-Sunday (August 22-23), 2019
 </p>
 
 <p>
@@ -137,11 +136,9 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 
 <p>
   <strong>Where:</strong>
-  CLSC 119, 924 E 57th St, Chicago, IL 60637.
+  Stuart 101, 5835 S. Greenwood Ave. Chicago, IL 60637.
   Get directions with
-  <a href="//www.openstreetmap.org/?mlat=41.791836&mlon=-87.602679}}&zoom=16">OpenStreetMap</a>
-  or
-  <a href="//maps.google.com/maps?q=41.791836, -87.602679">Google Maps</a>.
+  <a href="https://goo.gl/maps/facMWBhFz6eV4rPj7">Google Maps</a>.
 </p>
 
 
@@ -155,14 +152,13 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 
 <p>
   <strong>Instructors:</strong>
-  Arjun Biddanda, Nicholas Knoblauch, Briana Mittleman, Angela Li
+  Arjun Biddanda, Nicholas Knoblauch, Briana Mittleman
 </p>
 
 <p>
-<!--  <strong>Helpers:</strong>
-  Peter Carbonetto, Gao Wang, John Blischak, Sahar Mozaffari, Briana Mittleman, Yeonwoo Park, Maryn Carlson
+ <strong>Helpers:</strong>
+ Zach Miller
 </p>
--->
 <p>
   <strong>Faculty advisor:</strong>
   Allan Drummond
@@ -200,29 +196,30 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 <h2 id="schedule">Schedule</h2>
 
 <h3>January 12</h3>
-    <table class="table table-striped">
-      <tr><td class="alignleft">08:00 am - 08:30 am - <a href="#setup">Installation help</a></td></tr>
-      <tr><td class="alignleft">08:30 am - 10:00 am - <a href="https://crerecombinase.github.io/r-intermediate-altmetrics/index.html#topics"> Review of Unix shell and R</a> </td></tr>
-      <tr><td class="alignleft">10:00 am - 10:30 am - Coffee break</td></tr>
-      <tr><td class="alignleft">10:30 am - 12:00 pm - <a href="https://crerecombinase.github.io/r-intermediate-altmetrics/index.html#topics">Writing reproducible reports</a></td></tr>
-      <tr><td class="alignleft" >12:00 pm - 01:00 pm - Lunch</td></tr>
-      <tr><td class="alignleft">01:00 pm - 02:30 pm -  <a href="https://crerecombinase.github.io/r-intermediate-altmetrics/index.html#topics">Debugging</a></td></tr>
-      <tr><td class="alignleft">02:30 pm - 03:00 pm - Coffee break</td></tr>
-      <tr><td class="alignleft">03:00 pm - 04:30 pm -  <a href="https://crerecombinase.github.io/r-intermediate-altmetrics/index.html#topics">Defensive programming</a></td></tr>
-    </table>
+<table class="table table-striped">
+  <tr><td class="alignleft">08:00 am - 08:30 am - Installation and troubleshooting</td></tr>
+  <tr><td class="alignleft">08:30 am - 09:00 am - <a href="http://swcarpentry.github.io/r-novice-inflammation/09-supp-intro-rstudio/">Introduction to RStudio</a></td></tr>
+  <tr><td class="alignleft">09:00 am - 10:00 am - <a href="http://swcarpentry.github.io/r-novice-inflammation/01-starting-with-data/">Analyze data with R</a></td></tr>
+  <tr><td class="alignleft">10:00 am - 10:30 am - Break</td></tr>
+  <tr><td class="alignleft">10:30 am - 12:00 pm - <a href="http://swcarpentry.github.io/r-novice-inflammation/02-func-R/">Organize your code with R functions</a></td></tr>
+  <tr><td class="alignleft">12:00 pm - 01:00 pm - Lunch</td></tr>
+  <tr><td class="alignleft">01:00 pm - 02:30 pm - <a href="http://swcarpentry.github.io/r-novice-inflammation/03-loops-R/">Automate tasks with loops</a></td></tr>
+  <tr><td class="alignleft">02:30 pm - 03:00 pm - Coffee break</td></tr>
+  <tr><td class="alignleft">03:00 pm - 04:30 pm - <a href="http://swcarpentry.github.io/r-novice-inflammation/04-cond/">Make choices with if/else statements</a></td></tr>
+</table>
 
-    <h3>January 13</h3>
-    <table class="table table-striped">
-			<tr><td class="alignleft" >08:00 am - 08:30 am - <a href="#setup">Installation help</a></td></tr>
-			<tr><td class="alignleft">08:30 pm - 10:00 pm - <a href="https://crerecombinase.github.io/r-intermediate-altmetrics/index.html#topics"> Analyzing data with dplyr</a></td></tr>
-      <tr><td class="alignleft">10:00 pm - 10:30 pm - Coffee break</td></tr>
-      <tr><td class="alignleft">10:30 pm - 12:00 pm - <a href="https://crerecombinase.github.io/r-intermediate-altmetrics/index.html#topics"> Visualizing data with ggplot2</a></td></tr>
-			<tr><td class="alignleft" >12:00 pm - 01:00 pm - Lunch</td></tr>
-			
-      <tr><td class="alignleft">01:00 am - 02:30 pm - <a href="https://crerecombinase.github.io/git-lessons/index.html#topics">Version control with Git</a></td></tr>
-      <tr><td class="alignleft">02:30 pm - 03:00 pm - Coffee break</td></tr>
-      <tr><td class="alignleft">03:00 pm - 04:30 pm - <a href="https://crerecombinase.github.io/git-lessons/index.html#topics">Version control with Git</a></td></tr>
-		</table>
+<h3>January 13</h3>
+<table class="table table-striped">
+  <tr><td class="alignleft">08:00 am - 08:30 am - Installation and troubleshooting</td></tr>
+  <tr><td class="alignleft">08:30 am - 10:00 am - <a href="https://swcarpentry.github.io/shell-novice/">Introduction to the Unix shell</a></td></tr>
+  <tr><td class="alignleft">10:00 am - 10:30 am - Break</td></tr>
+  <tr><td class="alignleft">10:30 am - 12:00 pm - <a href="https://swcarpentry.github.io/shell-novice/">Introduction to the Unix shell (cont)</a></td></tr>
+  <tr><td class="alignleft">12:00 pm - 01:00 pm - Lunch</td></tr>
+  <tr><td class="alignleft">01:00 pm - 02:30 pm - <a href="http://swcarpentry.github.io/git-novice/">Version control with Git and GitHub</a></td></tr>
+  <tr><td class="alignleft">02:30 pm - 03:00 pm - Break</td></tr>
+  <tr><td class="alignleft">03:00 pm - 04:30 pm - Using Git with RStudio</td></tr>
+</table>
+
 <hr/>
 <h2 id="syllabus">Syllabus</h2>
 
@@ -305,7 +302,6 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
     <div class="col-md-4">
       <h4 id="shell-windows"> Windows </h4>
       <a href="https://www.youtube.com/watch?v=339AEqk9c-8">Video Tutorial</a>
-
       <ol>
         <li>Download the Git for Windows <a href="https://git-for-windows.github.io/">installer</a>.</li>
         <li>Run the installer and follow the steps bellow:
@@ -359,7 +355,6 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
       </ol>
       <p>This will provide you with both Git and Bash in the Git Bash program.</p>
     </div>
-
     <div class="col-md-4">
       <h4 id="shell-macosx">Mac OS X</h4>
       <p>
@@ -371,15 +366,6 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
         for an example on how to open the Terminal.
         You may want to keep
         Terminal in your dock for this workshop.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="shell-linux">Linux</h4>
-      <p>
-        The default shell is usually Bash, but if your
-        machine is set up differently you can run it by opening a
-        terminal and typing <code>bash</code>.  There is no need to
-        install anything.
       </p>
     </div>
   </div>
@@ -403,7 +389,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
     Please consider what personal information you'd like to reveal. For
     example, you may want to review these
     <a href="https://help.github.com/articles/keeping-your-email-address-private/">instructions
-    for keeping your email address private</a> provided at GitHub.
+      for keeping your email address private</a> provided at GitHub.
   </p>
   <div class="row">
     <div class="col-md-4">
@@ -422,18 +408,6 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
         <a href="http://sourceforge.net/projects/git-osx-installer/files/">this list</a>.
         After installing Git, there will not be anything in your <code>/Applications</code> folder,
         as Git is a command line program.
-        <strong>For older versions of OS X (10.5-10.8)</strong> use the
-        most recent available installer labelled "snow-leopard"
-        <a href="http://sourceforge.net/projects/git-osx-installer/files/">available here</a>.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="git-linux">Linux</h4>
-      <p>
-        If Git is not already available on your machine you can try to
-        install it via your distro's package manager. For Debian/Ubuntu run
-        <code>sudo apt-get install git</code> and for Fedora run
-        <code>sudo yum install git</code>.
       </p>
     </div>
   </div>
@@ -475,13 +449,6 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
         It should be pre-installed.
       </p>
     </div>
-    <div class="col-md-4">
-      <h4 id="editor-linux">Linux</h4>
-      <p>
-        nano is a basic editor and the default that instructors use in the workshop.
-        It should be pre-installed.
-      </p>
-    </div>
   </div>
 </div> <!-- End of 'editor' section. -->
 
@@ -513,17 +480,6 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
         <a href="http://cran.r-project.org/bin/macosx/R-latest.pkg">this .pkg file</a>
         from <a href="http://cran.r-project.org/index.html">CRAN</a>.
         Also, please install the
-        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="r-linux">Linux</h4>
-      <p>
-        You can download the binary files for your distribution
-        from <a href="http://cran.r-project.org/index.html">CRAN</a>. Or
-        you can use your package manager (e.g. for Debian/Ubuntu
-        run <code>sudo apt-get install r-base</code> and for Fedora run
-        <code>sudo yum install R</code>).  Also, please install the
         <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
       </p>
     </div>
