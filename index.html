@@ -8,11 +8,11 @@ country: "us"      # lowercase two-letter ISO country code such as "fr" (see htt
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
 latlng: "41.791836,-87.602679"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use http://www.latlong.net/)
 humandate: "August 22-23, 2019"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "8:00 am - 4:30 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
+humantime: "9:00 am - 4:30 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: 2019-08-22      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2019-08-23        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["Nick Knoblauch", "Arjun Biddanda", "Briana Mittleman"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Zach Miller"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+instructor: ["Nick Knoblauch", "Arjun Biddanda", "Briana Mittleman", "Zachary Miller"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Esha Bandhopadyay", "Jennifer Blanc", "Anthony Hung"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 contact: ["nwknoblauch@uchicago.edu", "abiddanda@uchicago.edu","brmittleman@uchicago.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes:             # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
@@ -85,7 +85,6 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   <!-- </li>  -->
   <!-- <li>The UChicago pre-workshop survey is closed.</li> -->
   <!-- <li>The Software Carpentry pre-workshop survey is closed.</li> -->
- <!--TODO : need to update these survey links-->
  <!--<li>Please complete-->
   <!--the <a href="https://goo.gl/forms/x1MDvB0B9jp1w3et1", target="_blank"> pre-workshop survey</a>.</li>-->
   <!--<li>The UChicago pre-workshop survey is closed.</li>-->
@@ -106,12 +105,12 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 <h2 id="general">General Information</h2>
 
 <p>
-  <!--  This interactive workshop will cover the basics of R, the Unix shell,-->
-  <!--and version control.-->
-  <!--<a href="http://www.r-project.org">R</a> is a computing environment-->
-  <!--that is especially powerful for data exploration, visualization, and-->
-  <!--statistical analysis.-->
-  This interactive workshop is for learners that are comfortable programming in R and want to learn some of R's powerful tools for analyzing and visualizing data. We will begin with a brief overview of R and the Unix Shell, and cover topics such as developing reproduceable reports in R Markdown, defensive programming, and data visualization in ggplot2.
+	This interactive workshop will cover the basics of R, the Unix shell,
+	and version control.
+	<a href="http://www.r-project.org">R</a> is a computing environment
+	that is especially powerful for data exploration, visualization, and
+	statistical analysis.
+  <!--This interactive workshop is for learners that are comfortable programming in R and want to learn some of R's powerful tools for analyzing and visualizing data. We will begin with a brief overview of R and the Unix Shell, and cover topics such as developing reproduceable reports in R Markdown, defensive programming, and data visualization in ggplot2.-->
 </p>
 
 <p>
@@ -119,7 +118,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 </p>
 
 <p>
-  <strong>When:</strong> 8:30 am - 4:30 pm, Thursday-Friday (August 22-23), 2019
+  <strong>When:</strong> 9:00 am - 4:30 pm, Thursday-Friday (August 22-23), 2019
 </p>
 
 <p>
@@ -135,9 +134,9 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 
 <p>
   <strong>Where:</strong>
-  Stuart 101, 5835 S. Greenwood Ave. Chicago, IL 60637.
+  CSIL 3\&4, 5730 S Ellis Ave. Chicago, IL 60637.
   Get directions with
-  <a href="https://goo.gl/maps/facMWBhFz6eV4rPj7">Google Maps</a>.
+  <a href="https://goo.gl/maps/j7dCFPD6t7p1Rhah8">Google Maps</a>.
 </p>
 
 
@@ -219,6 +218,9 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   <tr><td class="alignleft">03:00 pm - 04:30 pm - Using Git with RStudio</td></tr>
 </table>
 
+
+
+TODO : this section needs to change a bit
 <hr/>
 <h2 id="syllabus">Syllabus</h2>
 
@@ -486,19 +488,18 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 </div> <!-- End of 'R' section. -->
 
 
-<div id="r-packages">
-	<h3>R packages</h3>
-	<p>
-		Please install the following R packages using <code>install.packages</code>:
-		<ul>
-			<li> <a href="https://cran.r-project.org/web/packages/tidyverse/index.html">tidyverse</a></li>
-			<li><a href="https://cran.r-project.org/web/packages/testit/index.html">testit</a></li>
-			<li><a href="https://cran.r-project.org/web/packages/rmarkdown/index.html">rmarkdown</a></li>
-		</ul>
-	</p>
+<!--<div id="r-packages">-->
+	<!--<h3>R packages</h3>-->
+	<!--<p>-->
+		<!--Please install the following R packages using <code>install.packages</code>:-->
+		<!--<ul>-->
+			<!--<li> <a href="https://cran.r-project.org/web/packages/tidyverse/index.html">tidyverse</a></li>-->
+			<!--<li><a href="https://cran.r-project.org/web/packages/testit/index.html">testit</a></li>-->
+			<!--<li><a href="https://cran.r-project.org/web/packages/rmarkdown/index.html">rmarkdown</a></li>-->
+		<!--</ul>-->
+	<!--</p>-->
 
-</div> 
-
+<!--</div> -->
 
 <h2 id="acknowledgments">Acknowledgments</h2>
 <p>
