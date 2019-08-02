@@ -219,35 +219,60 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 </table>
 
 
-
-TODO : this section needs to change a bit
 <hr/>
 <h2 id="syllabus">Syllabus</h2>
 
-<h3>Review of the Unix shell and R programming</h3>
+<h3><a href="http://swcarpentry.github.io/r-novice-inflammation/09-supp-intro-rstudio/">Introduction to RStudio</a></h3>
 <p>
-  We will start with a refresher on the Unix shell and R
-  programming. Specifically, we will quickly review how to manage files with the
-  Unix shell and write loops and functions in R. This will ensure that everyone
-  is reminded of the relevant syntax needed for the rest of the workshop.
+  We will introduce the basic functionalities of RStudio, a useful
+  integrated development environment (IDE) for writing R code.
 </p>
 
-<h3>Writing reproducible reports</h3>
+<h3><a href="http://swcarpentry.github.io/r-novice-inflammation/01-starting-with-data/">Analyze data with R</a></h3>
 <p>
-  We will introduce the concept of literate programming, in which code, plots,
-  and text are combined into one document. This makes it easier to organize a
-  research project and share the results. Specifically, we will use
-  knitr/rmarkdown/pandoc to convert R code into html, pdf, and Word documents.
+ We will demonstrate how to import a data set, calculate descriptive
+ statistics, and create some basic plots.
 </p>
 
-<h3>Exploring and visualizing data</h3>
+<h3><a href="http://swcarpentry.github.io/r-novice-inflammation/02-func-R/">Organize your code with R functions</a></h3>
 <p>
-  We will teach how to subset, summarize, and clean a data set using the R
-  package dplyr. Furthermore, we will demonstrate how to visualize multivariate
-  data using the popular graphics package ggplot2.
+  We can extend R by converting common routines into functions. This
+  allows us to execute the same commands on many different input
+  arguments. Best of all, writing functions makes it easier to read
+  and maintain your code. In this lesson, we convert the analysis we
+  performed in the previous lesson into a function that can then be
+  applied to any similar input data set.
 </p>
 
-<h3>Tracking code development</h3>
+<h3><a href="http://swcarpentry.github.io/r-novice-inflammation/03-loops-R/">Automate tasks with loops</a></h3>
+<p>
+  One of the main advantages of writing code over using spreadsheet
+  software is that it is easier to repeat the analysis on new data
+  sets. In this lesson, we use loops to automatically apply the
+  function we wrote in the previous lesson to process multiple data
+  sets.
+</p>
+
+<h3><a href="http://swcarpentry.github.io/r-novice-inflammation/04-cond/">Make choices with if/else statements</a></h3>
+<p>
+  Automated data analysis pipelines can be made even more powerful by
+  allowing the code to make decisions based on the input parameters
+  and data. In this lesson, we modify our code from the previous
+  lessons so that it will save the analysis plots to a specific file
+  only if we provide a filename as input. This allows us to choose
+  whether to immediately view the results in the RStudio window or
+  save the results to a file.
+</p>
+
+<h3><a href="http://swcarpentry.github.io/shell-novice">Introduction to the  Unix shell</a></h3>
+<p>
+  We will introduce the Unix shell and motivate it's usefulness.
+  Specifically, we will quickly introduce how to manage files with the
+  Unix shell and how to navigate the file system.
+</p>
+
+
+<h3><a href="http://swcarpentry.github.io/git-novice">Tracking code development</a></h3>
 <p>
   We will cover how to track code development using the version control software
   Git. This facilitates both experimenting with new ideas and the ability to
@@ -256,15 +281,8 @@ TODO : this section needs to change a bit
   website GitHub.
 </p>
 
-<h3>Debugging, defensive programming, and automated testing</h3>
-<p>
-  We will cover multiple aspects of ensuring that code is working
-  correctly. This will include how to debug functions, programming defensively
-  by including assertion statements to check code behavior, and writing tests
-  that can be run automatically.
-<p>
-
 <hr/>
+
 
 <!--
   SETUP
